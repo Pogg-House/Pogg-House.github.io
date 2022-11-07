@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121217;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.scnw {
+    filter: grayscale();
+    transition: filter 500ms;
+}
+
+.scnw img {
+    width: 30em;
+    transition: width 400ms;
+}
+
+.scnw:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.scnw img:hover {
+    width: 32em;
+}
+
+@media only screen and (max-width: 1080px) {
+    .scnw img {
+        max-width: 100%;
+    }
+}
